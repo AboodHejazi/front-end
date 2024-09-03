@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.card:hover{
+    transform: scale(1.03);
+    transition: 1s;
+}
+.navbar .nav-link:hover{
+background-color: rgb(235, 169, 83);
+}
+#cardbody:hover{
+    background-color: aliceblue;
+}
