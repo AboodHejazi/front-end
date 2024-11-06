@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(249, 240, 229);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+header a {
+    padding: 20px;
+    color: rgb(57, 55, 55);
+    font-size: 15px;
+}
+.gohome{
+    background-color:#bcafaf77;
+   border-radius: 5px;
+
+}
+.gohome-container{
+    align-self: center;
+    width:120px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+    padding: 10px;
+     background: #bcafaf;
+}
+
+.grid-item1,
+.grid-item2 {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.grid-item2 {
+    justify-self: start;
+}
+
+.contain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+
+
+}
+
+
+.about {
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(218, 215, 215);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+
+
+.about a,
+.archive a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+ 
+
+
+.archive {
+    padding: 12px;
+    padding-top: 200px;
+}
+
+.archive nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.elsewhere {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 600px;
+}
+
+
+.grid-item1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media (max-width: 320px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .gohome-container{
+        align-self: center;
+        width:60px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about,
+    .archive {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .gohome-container{
+        align-self: center;
+        width:60px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gohome-container{
+        align-self: center;
+        
+        width:auto;
+    }
+}
+    @media (min-width: 481px) and (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: 70% 30%;
+        }
+        .gohome-container{
+            align-self: center;
+            width:auto;
+        }
+        header {
+            justify-content: space-between;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .grid-container {
+            grid-template-columns: 70% 30%;
+        }
+        .gohome-container{
+            align-self: center;
+            width:auto;
+        }
+        header {
+            justify-content: space-between;
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1200px) {
+        .grid-container {
+            grid-template-columns: 70% 30%;
+        }
+        .gohome-container{
+            align-self: center;
+            width:auto;;
+        }
+    }
+
+    @media (min-width: 1201px) and (max-width: 1927px) {
+        
+        .grid-container {
+            grid-template-columns: 70% 30%;
+        }
+
+        .grid-item2 {
+            justify-self: start;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .gohome-container{
+            align-self: center;
+            width:auto;
+        }
+    }
+    @media (min-width: 1201px) and (max-width: 1228px) {
+        
+        .grid-container {
+            grid-template-columns: 70% 30%;
+        }
+        .gohome-container{
+            align-self: center;
+            width:auto;
+        }
+        .grid-item2 {
+            justify-self: start;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+  
+    @media (min-width: 1928px) {
+        .grid-container {
+            grid-template-columns: 70% 30%;
+        }
+        .gohome-container{
+            align-self: center;
+            width:auto;
+        }
+    }
+
+/* For all iPads (standard, Mini, Air) in portrait orientation */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* Adjusting the grid layout for single-column on smaller screens */
+    .grid-container {
+        grid-template-columns: 1fr; /* Switches to one column */
+        gap: 10px;
+        padding: 15px;
+    }
+    .gohome-container{
+        align-self: center;
+        width:auto;
+    }
+    /* Adjusting header to center-align links */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    header a {
+        font-size: 18px;
+        padding: 15px;
+    }
+    
+    /* Setting grid items to full width */
+    .grid-item1,
+    .grid-item2 {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    /* Adjustments for .contain */
+    .contain {
+        padding-top: 50px;
+    }
+
+    /* About section adjustments */
+    .about {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    /* Archive adjustments */
+    .archive {
+        padding-top: 50px;
+    }
+
+    .archive nav {
+        padding: 5px;
+    }
+
+    /* Elsewhere adjustments */
+    .elsewhere {
+        padding-top: 20px;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Ensuring images in .grid-item1 are responsive */
+    .grid-item1 img {
+        width: 100%;
+        height: auto;
+    }
+    .gohome-container{
+        align-self: center;
+        width:auto;
+    }
+}
+
+/* Additional query for larger iPad screens (iPad Pro 11" and 12.9") */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .gohome-container{
+        align-self: center;
+        width:auto;
+    }
+    /* Slightly larger font size for iPad Pro models */
+    header a {
+        font-size: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Maintains two columns */
+        gap: 20px;
+    }
+
+    .grid-item1,
+    .grid-item2 {
+        width: 100%;
+        padding: 20px;
+    }
+    /* Other sections can maintain similar styles */
+    .elsewhere {
+        padding-top: 30px;
+    }
+}
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+    .gohome-container{
+        align-self: center;
+        width:auto;
+    }
+    /* Slightly larger font size for iPad Pro models */
+    header a {
+        font-size: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Maintains two columns */
+        gap: 10px;
+        
+    }
+
+    .grid-item1,
+    .grid-item2 {
+        width: 100%;
+        padding: 20px;
+    }
+    .grid-item2{
+        width:90%;
+    }
+
+    /* Other sections can maintain similar styles */
+    .elsewhere {
+        padding-top: 30px;
+    }
+}
