@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+form {
+    margin: 1rem 0;
+}
+
+#results {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
